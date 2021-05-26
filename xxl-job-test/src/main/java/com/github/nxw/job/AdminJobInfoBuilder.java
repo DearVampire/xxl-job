@@ -15,12 +15,12 @@ import com.github.nxw.info.TriggerStatusEnum;
  * @author lijinfeng
  */
 
-public class RdsJobInfoBuilder {
+public class AdminJobInfoBuilder {
 
     /** 执行器所在分组的ID */
     private static final int GROUP = 1;
     /** 负责人 */
-    private static final String AUTHOR = "rds";
+    private static final String AUTHOR = "Admin";
 
     /** 任务ID */
     private Integer id;
@@ -56,42 +56,42 @@ public class RdsJobInfoBuilder {
                 .build();
     }
 
-    public RdsJobInfoBuilder setId(Integer id) {
+    public AdminJobInfoBuilder setId(Integer id) {
         this.id = id;
         return this;
     }
 
-    public RdsJobInfoBuilder setCron(String cron) {
+    public AdminJobInfoBuilder setCron(String cron) {
         this.cron = cron;
         return this;
     }
 
-    public RdsJobInfoBuilder setName(String name) {
+    public AdminJobInfoBuilder setName(String name) {
         this.name = name;
         return this;
     }
 
-    public RdsJobInfoBuilder setHandler(String handler) {
+    public AdminJobInfoBuilder setHandler(String handler) {
         this.handler = handler;
         return this;
     }
 
-    public RdsJobInfoBuilder setParam(String param) {
+    public AdminJobInfoBuilder setParam(String param) {
         this.param = param;
         return this;
     }
 
-    public RdsJobInfoBuilder setTimeout(Integer timeout) {
+    public AdminJobInfoBuilder setTimeout(Integer timeout) {
         this.timeout = timeout;
         return this;
     }
 
-    public RdsJobInfoBuilder setRetryCount(Integer retryCount) {
+    public AdminJobInfoBuilder setRetryCount(Integer retryCount) {
         this.retryCount = retryCount;
         return this;
     }
 
-    public RdsJobInfoBuilder setTriggerStatus(TriggerStatusEnum triggerStatus) {
+    public AdminJobInfoBuilder setTriggerStatus(TriggerStatusEnum triggerStatus) {
         this.triggerStatus = triggerStatus;
         return this;
     }
