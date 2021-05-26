@@ -19,11 +19,13 @@ xxl:
   job:
     admin:
       # 调度中心xxl-job admin部署跟地址 [选填]：如调度中心集群部署存在多个地址则用逗号分隔。执行器将会使用该地址进行"执行器心跳注册"和"任务结果回调"；为空则关闭自动注册
-      addresses: http://192.168.1.187:9000/xxl-job-admin
+      address: http://192.168.1.187:9000/xxl-job-admin/
+      addresses: http://192.168.1.187:9000/xxl-job-admin/
       ### xxl-job,access token
       ### 执行器通讯TOKEN [选填]：非空时启用；
     accessToken:
     executor:
+      logretentiondays: -1
       ### xxl-job executor appname
       ### 执行器AppName [选填]：执行器心跳注册分组依据；为空则关闭自动注册
       appname: xxl-job-executor-demo
@@ -40,6 +42,7 @@ xxl:
       logpath: /Users/danjiaying/牛晓文/code/xxl-job-2.3.0/xxl-job-log
       ### xxl-job executor log-retention-days
       # 执行器日志文件保存天数[选填]：过期日志自动清理, 限制值大于等于3时生效;否则,如-1,关闭自动清理功能；
+
 logging:
   path: /Users/danjiaying/牛晓文/code/xxl-job-2.3.0/xxl-job.log
-  config: classpath:logback-spring.xml
+  config: classpath:logback.xml

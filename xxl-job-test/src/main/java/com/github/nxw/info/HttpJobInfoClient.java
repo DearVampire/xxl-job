@@ -1,11 +1,7 @@
-/*
- * Copyright (c) 1993, 2020, the original author or authors. All rights reserved.
- */
-
 package com.github.nxw.info;
 
-import com.bonc.bcloud.rds.job.client.http.util.RestTemplateUtils;
-import com.bonc.bcloud.rds.job.client.util.ReturnUtils;
+import com.github.nxw.http.util.RestTemplateUtils;
+import com.github.nxw.util.ReturnUtils;
 import com.xxl.job.core.biz.model.ReturnT;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;

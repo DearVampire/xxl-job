@@ -5,6 +5,8 @@
 package com.github.nxw.util;
 
 import com.xxl.job.core.biz.model.ReturnT;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
@@ -15,7 +17,8 @@ import java.util.Optional;
  *
  * @author lijinfeng
  */
-
+@Slf4j
+@Component
 public class ReturnUtils {
 
     public static <T> boolean isSuccess(ReturnT<T> returnT) {

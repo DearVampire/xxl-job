@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 1993, 2020, the original author or authors. All rights reserved.
- */
-
 package com.github.nxw.http.util;
 
 import org.springframework.http.*;

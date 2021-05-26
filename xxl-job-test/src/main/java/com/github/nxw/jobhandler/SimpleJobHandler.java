@@ -26,7 +26,7 @@ public class SimpleJobHandler {
     @XxlJob("execLinuxCmd")
     public ReturnT<String> taskJobHandler(String param) throws Exception {
         XxlJobHelper.log("XXL-JOB, taskJobHandler start---------------");
-        String cmd = "py " + param;
+        String cmd = "python " + param;
         execLinuxCmdUtils.executeLinuxCmd(cmd);
         return ReturnT.SUCCESS;
     }

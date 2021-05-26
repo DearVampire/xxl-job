@@ -6,6 +6,7 @@ package com.github.nxw.job;
 
 import com.github.nxw.info.JobInfo;
 import com.github.nxw.info.TriggerStatusEnum;
+import org.springframework.stereotype.Component;
 
 /**
  * ClassName: JobInfoBuilder <br/>
@@ -15,6 +16,7 @@ import com.github.nxw.info.TriggerStatusEnum;
  * @author lijinfeng
  */
 
+@Component
 public class AdminJobInfoBuilder {
 
     /** 执行器所在分组的ID */
